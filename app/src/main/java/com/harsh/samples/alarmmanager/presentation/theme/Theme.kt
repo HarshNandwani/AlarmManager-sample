@@ -1,4 +1,4 @@
-package com.harsh.samples.alarmmanager.ui.theme
+package com.harsh.samples.alarmmanager.presentation.theme
 
 import android.app.Activity
 import android.os.Build

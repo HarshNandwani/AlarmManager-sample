@@ -1,4 +1,4 @@
-package com.harsh.samples.alarmmanager
+package com.harsh.samples.alarmmanager.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
