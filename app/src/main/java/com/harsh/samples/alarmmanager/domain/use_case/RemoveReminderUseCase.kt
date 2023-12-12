@@ -1,8 +1,7 @@
-package com.harshnandwani.mywayreminder.domain.use_case
+package com.harsh.samples.alarmmanager.domain.use_case
 
 import com.harsh.samples.alarmmanager.domain.model.Reminder
 import com.harsh.samples.alarmmanager.domain.repository.ReminderRepository
-import com.harsh.samples.alarmmanager.domain.use_case.CancelReminderUseCase
 
 class RemoveReminderUseCase(
     private val cancelReminder: CancelReminderUseCase,
