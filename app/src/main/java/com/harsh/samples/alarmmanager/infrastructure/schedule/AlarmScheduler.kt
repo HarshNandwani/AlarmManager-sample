@@ -7,7 +7,8 @@ import android.content.Intent
 import com.harsh.samples.alarmmanager.domain.actions.Scheduler
 import com.harsh.samples.alarmmanager.domain.model.Reminder
 import com.harsh.samples.alarmmanager.domain.util.ScheduleException
-import com.harsh.samples.alarmmanager.infrastructure.schedule.Constants.KEY_REMINDER_ID
+import com.harsh.samples.alarmmanager.domain.util.Constants.KEY_REMINDER_ID
+import com.harsh.samples.alarmmanager.presentation.AlarmReceiver
 
 class AlarmScheduler(private val context: Context): Scheduler {
 

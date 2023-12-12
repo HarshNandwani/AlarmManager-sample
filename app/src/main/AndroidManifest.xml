@@ -32,7 +32,7 @@
         </activity>
 
         <receiver
-            android:name=".infrastructure.schedule.AlarmReceiver"
+            android:name=".presentation.AlarmReceiver"
             android:enabled="true"
             android:exported="false" />
 
