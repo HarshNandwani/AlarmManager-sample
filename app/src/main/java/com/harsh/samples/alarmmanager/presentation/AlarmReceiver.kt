@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import android.widget.Toast
 import com.harsh.samples.alarmmanager.domain.model.ReminderMode
 import com.harsh.samples.alarmmanager.domain.repository.ReminderRepository
 import com.harsh.samples.alarmmanager.domain.util.Constants.KEY_REMINDER_ID
@@ -27,7 +26,6 @@ class AlarmReceiver: BroadcastReceiver() {
         CoroutineScope(EmptyCoroutineContext).launch(Dispatchers.IO) {
             val reminder = repository.get(id) ?: return@launch
 
-            Toast.makeText(context, reminder.title, Toast.LENGTH_SHORT).show()
             Log.d("AlarmReceiver", "Reminder - ${reminder.title}")
 
             when(reminder.mode) {
