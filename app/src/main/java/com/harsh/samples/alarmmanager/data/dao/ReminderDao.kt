@@ -3,13 +3,14 @@ package com.harsh.samples.alarmmanager.data.dao
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.harsh.samples.alarmmanager.data.entity.ReminderEntity
 
 @Dao
 interface ReminderDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun add(reminder: ReminderEntity)
 
     @Query("SELECT * FROM ReminderEntity")
